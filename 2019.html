@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Electric Picnic | 2019 Line-up</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+	<header id="header">
+		<img src="img/logo.png" alt="Electric Picnic logo" />
+  		<nav>
+        	<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="location.html">Location</a>
+				<a href="accomodation.html">Accomodation</a>
+				<a href="tickets.html">Tickets</a>
+      			<div class="dropdown">
+            		<button class="dropbtn">Line-ups
+						<i class="fa fa-caret-down"></i>
+					</button>
+            		<div class="dropdown-content">
+						<a href="2019.html" class="active">2019 line-up</a>
+						<a href="2018.html">2018 line-ups</a>
+						<a href="2017.html">2017 line-ups</a>
+						<a href="2016.html">2016 line-ups</a>
+					</div>
+          		</div>
+      			<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+     	</nav>
+	</header>
+	
+	<div class="lineups">
+		<h1>2019 Line-up</h1>
+		<img src="img/2019_lineup.jpg" alt="2019 Line-up Poster" class="poster"/>
+		
+		<!-- Container for the image gallery -->
+		<div class="ss_container">
+  			<!-- Full-width images with number text -->
+  			<div class="mySlides">
+    			<div class="numbertext">Florence + the Machine</div>
+      			<img src="img/fatm.jpg" alt="Florence + the Machine" class="gallery"/>
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">Hozier</div>
+      			<img src="img/hozier.jpg" alt="Hozier" class="gallery"/>
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">The 1975</div>
+      			<img src="img/the1975.jpg" alt="The 1975" class="gallery"/>
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">Billie Eilish</div>
+      			<img src="img/billie.jpg" alt="Billie Eilish" class="gallery"/>
+  			</div>
+
+  			<div class="mySlides">
+    			<div class="numbertext">Jess Glynne</div>
+      			<img src="img/jessglynne.jpg" alt="Jess Glynne" class="gallery"/>
+  			</div>
+			
+			<!-- Next and previous buttons -->
+  			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  			<!-- Image text -->
+  			<div class="caption-container">
+    			<p id="caption"></p>
+  			</div>
+			
+			<div class="youtube">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/DyDfgMOUjCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer">
+	  <p>&copy; B00105432 Ryan Farrell 2019</p>
+	</footer>
+	
+	<script>
+		function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+				x.className += " responsive";
+  			} else {
+    			x.className = "topnav";
+  			}
+		}
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+  			showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+  			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  			var i;
+  			var slides = document.getElementsByClassName("mySlides");
+  			var dots = document.getElementsByClassName("demo");
+  			var captionText = document.getElementById("caption");
+  			if (n > slides.length) {slideIndex = 1}
+  			if (n < 1) {slideIndex = slides.length}
+  			for (i = 0; i < slides.length; i++) {
+    			slides[i].style.display = "none";
+  			}
+  			for (i = 0; i < dots.length; i++) {
+    			dots[i].className = dots[i].className.replace(" active", "");
+  			}
+  			slides[slideIndex-1].style.display = "block";
+  			dots[slideIndex-1].className += " active";
+  			captionText.innerHTML = dots[slideIndex-1].alt;
+		} 
+	</script>
+</div>
+</body>
+</html>

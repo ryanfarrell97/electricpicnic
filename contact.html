@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Electric Picnic | Contact</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+	<header id="header">
+		<img src="img/logo.png" alt="Electric Picnic logo" />
+  		<nav>
+        	<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="location.html">Location</a>
+				<a href="accomodation.html">Accomodation</a>
+				<a href="tickets.html">Tickets</a>
+      			<div class="dropdown">
+            		<button class="dropbtn">Line-ups
+						<i class="fa fa-caret-down"></i>
+					</button>
+            		<div class="dropdown-content">
+						<a href="2019.html">2019 line-up</a>
+						<a href="2018.html">2018 line-up</a>
+						<a href="2017.html">2017 line-up</a>
+						<a href="2016.html">2016 line-up</a>
+					</div>
+          		</div>
+      			<a href="contact.html" class="active">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+     	</nav>
+	</header>
+	
+	<form name="form" id="form">
+		<h1>Contact us</h1>
+		<label for="name">Name:</label>
+		<br>
+		<input name="name" type="text" required placeholder="Enter name here" id="name" class="formstyle" form="form">
+		<br>
+		<br>
+		<label for="email">Email:</label>
+		<br>
+		<input name="email" type="email" required placeholder="Enter email here" id="email" class="formstyle" form="form">
+		<br>
+		<br>
+		<label for="tel">Phone number</label>
+		<br>
+		<input name="phone" type="tel" required placeholder="Enter phone number here" id="phone" class="formstyle" form="form">
+		<br>
+		<br>
+		Any further enquiries?
+		<br>
+		<textarea name="enquiries" required placeholder="Your enquiries here" class="formstyle" id="enquiries" form="form"></textarea>
+		<br>
+		<input name="submit" type="submit" class="formstyle" id="submit" form="form" value="Submit">
+	</form>
+	
+	<footer class="footer">
+	  <p>&copy; B00105432 Ryan Farrell 2019</p>
+	</footer>
+	
+	<script>
+		function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+		x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  		}
+		}
+	</script>
+</div>
+</body>
+</html>

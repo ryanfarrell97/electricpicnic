@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Electric Picnic | Location</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+	<header id="header">
+	<img src="img/logo.png" alt="Electric Picnic logo" />
+  		<nav>
+        	<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="location.html" class="active">Location</a>
+				<a href="accomodation.html">Accomodation</a>
+				<a href="tickets.html">Tickets</a>
+      			<div class="dropdown">
+            		<button class="dropbtn">Line-ups
+						<i class="fa fa-caret-down"></i>
+					</button>
+            		<div class="dropdown-content">
+						<a href="2019.html">2019 line-up</a>
+						<a href="2018.html">2018 line-up</a>
+						<a href="2017.html">2017 line-up</a>
+						<a href="2016.html">2016 line-up</a>
+					</div>
+          		</div>
+      			<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+     	</nav>
+	</header>
+	
+	<div id="location">
+		<section class="stradbally">
+			<h1>About Stradbally</h1>
+			<p>Stradbally, a town in Co. Laois, has hosted the annual festival from its creation in 2004. Located close to Portlaoise, one of the major towns in the midlands, it is an ideal location for a festival of this kind. With trains and buses regularly serving the nearby towns of Portlaoise and Arlington, the festival is easily accessible, with there being different hotels around the county of Laois, which are covered in a different page on the website.</p>
+		</section>
+	
+		<div class="googlemaps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d868.8419626696268!2d-7.160581029504932!3d53.012545445718054!2m3!1f330.00000000000045!2f0!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x485d72984b4716cd%3A0x8f092611ea53be47!2sElectric+Picnic!5e1!3m2!1sen!2sie!4v1556793803158!5m2!1sen!2sie" width="95%" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	<footer class="footer">
+	  <p>&copy; B00105432 Ryan Farrell 2019</p>
+	</footer>
+	
+	<script>
+		function myFunction() {
+  		var x = document.getElementById("myTopnav");
+  		if (x.className === "topnav") {
+		x.className += " responsive";
+  		} else {
+    	x.className = "topnav";
+  		}
+		}
+	</script>
+</div>
+</body>
+</html>
